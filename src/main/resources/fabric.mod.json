@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "blurple",
+  "version": "${version}",
+  "name": "Blurple",
+  "description": "Simple lightweight discord integration mod for fabric",
+  "authors": [
+    "Creativious"
+  ],
+  "contact": {
+    "repo": "https://github.com/Timot/Blurple"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/blurple/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "com.neptunedevelopmentteam.blurple.client.BlurpleClient"
+    ],
+    "main": [
+      "com.neptunedevelopmentteam.blurple.Blurple"
+    ]
+  },
+  "mixins": [
+    "blurple.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
